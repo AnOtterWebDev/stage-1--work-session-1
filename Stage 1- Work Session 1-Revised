@@ -1,0 +1,147 @@
+<!-- As these are my personal notes, there may be some things missing based on my own knowledge and understanding.-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+      <title>Getting Started with HTML & Make a Webpage</title>
+
+    </head>
+    
+    <body>
+
+    <h1>Getting Started with HTML & Make a Webpage</h1>
+    
+    <div class="category">
+    <h2><u>The World Wide Web</u></h2>
+    <p>The web consists of <b>HTML</b> documents. <b>Hyperlinks</b> can be considered the "glue" of what holds the web together.</p>
+    <p> HTML stands for: <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage </p>
+    <p> The World Wide Web consists of a few key components:</p>
+    <ul>
+      <li><b>Computer w/ Browser</b> - Known as the "Client"<br></li>
+      <li><b>The Internet</b></li> 
+      <li><b>Servers</b></li>
+    </ul>
+    <p>The client communicates through the Internet with the servers using <b>HTTP</b> (Hypertext Transfer Protocol) <em>or</em> <b>HTTPS</b> (HyperText Transfer Protocol over SSL or the Secure Socket Layer).</p>
+    </div>
+
+    <div class="category">
+    <h2><u>Basic HTML Elements</u></h2>
+    <p><b>HTML</b> consists of a few components:</p>
+    <ol>
+      <li><u><b>Text Content</b></u>: What you see </li>
+      <li><u><b>Markup</b></u>: What the thing you see looks like.</li>
+      <li><u><b>References to Other Documents</b></u>: <em>Ex:images, videos, etc.</em></li>
+      <li><u><b>Links</b></u>: Links to other pages</li>
+    </ol>
+
+    <p><b>HTML Elements</b> tell a browser how to display content on a webpage, whether it is a link, an image or another aspect. It consists of the following structure:</p>
+    <p>&lt;<b>Element Name</b>&gt; "content" &lt;<b>/Element Name&gt;</b>. <em>Ex: &lt;b&gt; and &lt;/b&gt;</em></p>
+    </div>
+
+    <div class="importantnote">
+    <h5><u>IMPORTANT NOTE:</u></h5>
+    <p>Not all elements have opening and closing tags. An example of this is <b>&lt;br&gt;</b>. These are
+    called <b>void</b> tags. Tags that use the opening and closing entities are <b>NOT</b> a void tag
+    since they contain content inside them</p>
+    </div>
+
+    <div class="subcategory">
+    <h4><u>Examples of HTML Elements</u></h4>
+    <ul>
+      <li><b>Making Text Bold</b>: &lt;b&gt;text&lt;/b&gt;</li>
+      <li><b>Making Text <em>Italicized</em></b>: &lt;em&gt;text&lt;/em&gt;</li>
+      <li><b>Making Text <u>Underlined</u></b>: &lt;u&gt;text&lt;/u&gt;/li>
+      <li><b>Defining a Paragraph</b>: &lt;p&gt;text&lt;/p&gt;. Remember that the contents of the tag are in a "box". This box can be have height and width. This is a block-style, vs an in-line</li>
+      <li><b>Defining a Line Break</b>: &lt;br&gt; Unlike the p tag, this is not in a "box" or in block-style. This is in-line.</li>
+      <li><b>Creating a "Box" Container</b>: &lt;div&gt;content&lt;/div&gt;</li>
+      <li><b>Containing an "In-Line" Container</b>: &lt;span&gt;content&lt;/span&gt;</li>
+    </ul>
+    </div>
+
+    <div class="importantnote">
+    <h5><u>IMPORTANT NOTE:</u></h5>
+    <p><b>&lt;p&gt;</b> and <b>&lt;br&gt;</b> are important to keep in mind when it comes to whitespace. Remember that without these elements, all whitespace turns into a single space. 
+    <br>
+    Remember the differences between in-line and block elements. Some examples of in-line elements are the following tags: b, em, a, span, img, strong, and b </p>
+    </div>
+
+    <div class="category">
+    <h2><u>HTML Attributes</u></h2>
+    <p>Attributes can go inside of elements. Attributes have names and will give the browser more information on what to display. Their structure looks like this:</p>    
+    <p><b>&lt;tag attribute="value"&gt; contents &lt;/tag&gt;</b></p>
+    <p> Tags <u><b>CAN</b></u> have multiple attributes. An example of this is adding height and width to an image.</p>
+    </div>
+
+    <div class="subcategory">
+    <h4><u>Examples of HTML Attributes</u></h4>
+    <ul>
+      <li><b>Creating a <a href="www.google.com">Hyperlink</a></b>: &lt;a href="URL"&gt; Name of Link&lt;/a&gt;</li>
+      <li><b>Displaying an Image</b>: &lt;img src="url" alt="text"&gt; You should always include the alt-text in case of broken image links and for blind users. Always keep accesibility in mind.
+      <ul>
+      <li><img src="https://d9tyu2epg3boq.cloudfront.net/providers/udacity-blue.png" height="100" width="100" alt="Udacity Logo"/> <!-- Udacity logo property of Udacity --> </li>
+      </ul>
+    </ul>
+    </div>
+
+    <div class="category">
+    <h2><u>Structure of HTML Document</u></h2>
+    <p>All HTML documents should have <b><u><em>this</em></u></b> structure</p>
+      <p><b>&lt;!DOCTYPE html&gt;</b>- Lets the browser know that this is an HTML Document.
+      <br>
+      <b>&lt;html&gt;</b>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;head&gt;</b> - Contains the metadata. If there is CSS or JavaScript, it will go in here as well.
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;title&gt;&lt;/title&gt;</b>- This goes inside of the head tag with an additional indent. The title stays on one line. The title shows up at the top of the browser window.
+      <br>
+      <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</b>
+      <br>
+      <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</b>
+      <br>
+      <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Website Content (Ex: Text, Images, Videos)</em></b>
+      <br>
+      <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</b> - Body is on the same indent line as 'head'. Indent the elements and attributes. Make the code readable. Think of it like writing an essay.
+      <br>
+      <b>&lt;/html&gt;</b> - Closes the HTML tag.
+    </p>
+    </div>
+
+    <div class="category">
+      <h2><u>Boxes and Classes</u></h2>
+      <p>Boxes are created with <b>&lt;div&gt;</b> tags. Think of a webpage being made up of these boxes.</p>
+      <p>Classes act as "labels" to remind you what is inside the boxes.</p>
+      <p>They can have several labels (belong to several classes).</p>
+    </div>
+
+    <div class="subcategory">
+      <h4><u>Example:</u></h4>
+      <p><b>&lt;div class="title"&gt; My App &lt;/div&gt;</b>
+      <br>
+      <b>&lt;div class="app"&gt;</b>
+      <br>
+      <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="screenshot">Image &lt;/div>&gt;</b>
+        <br>
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="description"&gt; Text &lt;/div>&gt;</b>
+        <br>
+        <b>&lt;/div>&gt;</b>
+      </p>
+    </div>
+
+    <div class="category">
+      <h2><u>Summary</u></h2>
+      <p>HTML is used to tell the browser how to display pages on the World Wide Web, whether they consist of text, pictures, videos...etc. HTML Elements tell a browser how to display content on a webpage, whether it is a link, an image or another aspect. Attributes can go inside of elements. Attributes have names and will give the browser more information on what to display.</p>
+    </div>
+
+   <div class="category">
+    <h2><u>Key Links</u></h2>
+    <ul>
+    <li><a href="www.scratchpad.io">Scratchpad.Io</a>-A nifty sandbox of sorts. Remember this one. It's fun to test
+    things in.</li>
+    <li><a href="https://validator.w3.org/nu/">Nu HTML Checker</a> - Use this to check your HTML. </li>
+    </ul>
+   </div>
+
+  </body>
+</html>
